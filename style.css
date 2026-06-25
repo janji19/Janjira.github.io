@@ -1,53 +1,85 @@
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
+  font-family: "Sarabun", sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #FDFBF7; /* ปรับเป็นสีครีมละมุน เพื่อให้เข้ากับโทนสีของคุณ */
+  color: #4A3E3D; /* ปรับสีตัวหนังสือเข้มเป็นน้ำตาลหม่น ให้ดูซอฟต์กว่าสีดำสนิท */
 }
 
 header {
-    background: #4CAF50;
-    color: white;
-    padding: 20px 0;
-    text-align: center;
+  background: #FFE4EC; /* สีชมพูพาสเทลตามที่คุณเลือก */
+  color: #D17B49; /* แก้จากสีครีมเดิมที่กลืนกับพื้นหลัง เป็นสีส้มอิฐเพื่อให้เด่นและอ่านง่ายขึ้น */
+  padding: 30px 0; /* แก้ไขคำผิดจาก paddding -> padding และเพิ่มพื้นที่ให้โปร่งขึ้น */
+  text-align: center;
 }
 
 header h1 {
-    margin: 0;
+  margin: 0;
+  font-size: 2.5rem;
 }
 
 header p {
-    margin: 5px 0 0;
+  margin: 5px 0 0;
+  color: #8C7A78; /* ปรับสีคำอธิบายใต้ชื่อให้เข้มขึ้นเล็กน้อยเพื่อความชัดเจน */
 }
 
 section {
-    padding: 20px;
-    margin: 20px auto;
-    max-width: 800px;
-    background: white;
-    border-radius: 8px;
+  padding: 25px;
+  margin: 30px auto;
+  max-width: 800px;
+  background: white;
+  border-radius: 12px; /* เพิ่มความโค้งมนให้ดูนุ่มนวลเข้ากับสไตล์ */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05); /* แก้ไขคำผิดจาก rgbe -> rgba และปรับเงาให้ฟุ้งละมุนขึ้น */
 }
+
 h2 {
-  color: #4CAF50;
+  color: #D17B49; /* สีส้มอิฐสวยงาม */
+  border-bottom: 2px solid #FFE4EC; /* เพิ่มเส้นใต้หัวข้อสีชมพูเพื่อความน่ารัก */
+  padding-bottom: 8px;
 }
+
 .project {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
+  padding: 15px;
+  background-color: #FFFDF9; /* เพิ่มพื้นหลังแผ่นงานย่อยเป็นสีครีม */
+  border-radius: 8px;
 }
 
 .project h3 {
-    margin: 0 0 10px;
-    color: #333;
+  margin: 0 0 10px;
+  color: #D17B49;
 }
+
 ul {
-    list-style-type: square; 
-    padding-left: 20px;
+  list-style-type: square;
+  padding-left: 20px;
 }
+
+/* ตกแต่งรายการลิสต์เพิ่มเติมให้มีสีสันเข้าพวก */
+li {
+  margin-bottom: 8px;
+}
+li::marker {
+  color: #D17B49; /* เปลี่ยนสีเหลี่ยมหน้ารายการเป็นสีส้มอิฐ */
+}
+
 footer {
-    text-align: center;
-    padding: 10px 0;
-    background: #333; 
-    color: white;
-    margin-top: 20px;
+  text-align: center;
+  padding: 20px 0;
+  background: #E8FFF6; /* สีเขียวมิ้นท์พาสเทลตามที่คุณเลือก */
+  color: #3D6B58; /* ปรับสีข้อความฟุตเตอร์เป็นเขียวเข้ม เพื่อให้ล้อกับพื้นหลังและอ่านง่าย */
+  margin-top: 40px;
+  font-size: 0.9rem;
+}
+
+/* แถม: ตกแต่งลิงก์อีเมลในฟุตเตอร์ของคุณให้เข้ากัน */
+footer a {
+  color: #D17B49;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+footer a:hover {
+  text-decoration: underline;
 }
